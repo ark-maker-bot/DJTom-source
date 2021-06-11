@@ -30,8 +30,8 @@ client.on('message', async(msg) => {
 client.on('voiceStateUpdate', async(old_state, new_state) => {
 
   // checks if dj tom is the only on in the voice channel if so he leaves after 5 minutes.
-  // let old_channel = old_state.channel, new_channel = new_state.channel;
-  // if(new_channel === null)setTimeout(() => { if(old_channel.members.size === 1 && old_channel.members.has(client.user.id)){ const q = old_state.client.queue.get(old_state.guild.id); q.textChannel.send({ embed: { description: `Yeah, I was in the voice channel alone so I left, I guess I'm not fun.` } }); old_channel.leave(); } }, 1000*60*5);
+  let old_channel = old_state.channel, new_channel = new_state.channel;
+  if(new_channel === null)setTimeout(() => { if(old_channel.members.size === 1 && old_channel.members.has(client.user.id)){ const q = old_state.client.queue.get(old_state.guild.id); q.textChannel.send({ embed: { description: `Yeah, I was in the voice channel alone so I left, I guess I'm not fun.` } }); old_channel.leave(); } }, 1000*60*5);
 
   // checks deafen state, then server deafens
   if(new_state.member.id === client.user.id && !new_state.serverDeaf){
