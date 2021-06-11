@@ -8,9 +8,11 @@ If you want DJ Tom in your server then [HERE](https://discord.com/oauth2/authori
 
 DJ Tom used .ENV so if base things are below:
 
+```
 TOKEN=
 OWNER_ID=
 GENIUS_TOKEN=
+```
 
 DISCLAIMER: IF YOU WANT TO USE THIS SOURCE MAKE SURE YOU DON'T JUST USE IT, PUT SOME OTHER COMMANDS HERE AS WELL, THIS IS JUST A BASE.
 
