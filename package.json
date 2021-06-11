@@ -1,0 +1,37 @@
+{
+  "name": "sydy",
+  "version": "1.0.1",
+  "description": "A redo of alphfi which hopefully would work this time.",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "keywords": [
+    "discord",
+    "djs",
+    "js",
+    "javascript",
+    "alphfi",
+    "sydy"
+  ],
+  "author": ".nero",
+  "license": "ISC",
+  "dependencies": {
+    "better-redddit": "^1.2.6",
+    "cheerio": "^1.0.0-rc.5",
+    "discord.js": "^12.5.1",
+    "dotenv": "^8.2.0",
+    "ffmpeg-static": "^4.2.7",
+    "genius-lyrics": "^4.2.5",
+    "opusscript": "0.0.8",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
+    "song-lyrics-api": "^1.1.0",
+    "string-progressbar": "^1.0.3",
+    "superagent": "^6.1.0",
+    "twitter-v2": "^1.0.7",
+    "ytdl-core": "^4.8.2",
+    "ytpl": "^2.0.5",
+    "ytsr": "^3.3.1"
+  }
+}

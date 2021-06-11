@@ -1,0 +1,9 @@
+module.exports = {
+  name: 'help',
+  aliases: [],
+  description: 'Shows the help page',
+  usage: '?help',
+  async run(client, msg, args){
+    
+  }
+}
