@@ -1,10 +1,10 @@
 {
   "name": "sydy",
-  "version": "1.0.1",
-  "description": "A redo of alphfi which hopefully would work this time.",
+  "version": "1.2.2",
+  "description": "A music bot that is meant to be better than Groovy",
   "main": "app.js",
   "scripts": {
-    "test": "node app.js"
+    "start": "node app.js",
   },
   "keywords": [
     "discord",
@@ -27,6 +27,7 @@
     "request": "^2.88.2",
     "request-promise": "^4.2.6",
     "song-lyrics-api": "^1.1.0",
+    "spotify-url-info": "^2.2.3",
     "string-progressbar": "^1.0.3",
     "superagent": "^6.1.0",
     "twitter-v2": "^1.0.7",
