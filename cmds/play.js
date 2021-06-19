@@ -77,7 +77,7 @@ async function seek_track(song, msg, sec){
       const song_wait = setInterval(async() => {
         if(!check_queue(msg)){ msg.client.queue.delete(msg.guild.id); clearInterval(song_wait); }
         let q = msg.client.queue.get(msg.guild.id), songs = q.songs;
-        if(songs[0] !== undefined){ await start_track(songs[0].url, msg); clearInterval(song_wait); }
+        if(songs[0] !== undefined && songs.lenght > 0){ await start_track(songs[0].url, msg); clearInterval(song_wait); }
       }, 2000);
     }else{ update_ids(msg, queue.songs); await start_track(queue.songs[0].url, msg); }
   })
@@ -89,7 +89,7 @@ async function seek_track(song, msg, sec){
       const song_wait = setInterval(async() => {
         if(!check_queue(msg)){ msg.client.queue.delete(msg.guild.id); clearInterval(song_wait); }
         let q = msg.client.queue.get(msg.guild.id), songs = q.songs;
-        if(songs[0] !== undefined){ await start_track(songs[0].url, msg); clearInterval(song_wait); }
+        if(songs[0] !== undefined && songs.lenght > 0){ await start_track(songs[0].url, msg); clearInterval(song_wait); }
       }, 2000);
     }else{ update_ids(msg, queue.songs); await start_track(queue.songs[0].url, msg); }
   });
@@ -114,7 +114,7 @@ async function start_track(song, msg){
       const song_wait = setInterval(async() => {
         if(!check_queue(msg)){ msg.client.queue.delete(msg.guild.id); clearInterval(song_wait); }
         let q = msg.client.queue.get(msg.guild.id), songs = q.songs;
-        if(songs[0] !== undefined){ await start_track(songs[0].url, msg); clearInterval(song_wait); }
+        if(songs[0] !== undefined && songs.lenght > 0){ await start_track(songs[0].url, msg); clearInterval(song_wait); }
       }, 2000);
     }else{ update_ids(msg, queue.songs); await start_track(queue.songs[0].url, msg); }
   })
@@ -126,7 +126,7 @@ async function start_track(song, msg){
       const song_wait = setInterval(async() => {
         if(!check_queue(msg)){ msg.client.queue.delete(msg.guild.id); clearInterval(song_wait); }
         let q = msg.client.queue.get(msg.guild.id), songs = q.songs;
-        if(songs[0] !== undefined){ await start_track(songs[0].url, msg); clearInterval(song_wait); }
+        if(songs[0] !== undefined && songs.lenght > 0){ await start_track(songs[0].url, msg); clearInterval(song_wait); }
       }, 2000);
     }else{ update_ids(msg, queue.songs); await start_track(queue.songs[0].url, msg); }
   });
