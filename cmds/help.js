@@ -43,8 +43,3 @@ module.exports = {
     }
   }
 }
-function nsfw_check(cmd_name){
-	const names = ['hornyrate', 'masturbation', 'gayrate', 'racistrate', 'slaverate', 'slutrate', 'penisrate'];
-	if(names.includes(cmd_name))return true;
-	return false;
-}
